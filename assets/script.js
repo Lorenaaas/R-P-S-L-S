@@ -12,13 +12,6 @@ const spock_div = document.getElementById("spock");
 
 
 
-function getComputerChoice() {
-    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
-    console.log(Math.floor(Math.random() * 4));
-}
-
-getComputerChoice();
-
 function game(userChoice) {
 
 }
@@ -27,6 +20,7 @@ function main() {
 
     rock_div.addEventListener('click', function () {
         game("rock");
+        console.log("ytrf");
     });
 
     paper_div.addEventListener('click', function () {
