@@ -10,21 +10,39 @@ const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
 
-rock_div.addEventListener('click', function () {
-    console.log("you clicked on rock");
-});
 
-paper_div.addEventListener('click', function () {
-    console.log("you clicked on paper");
-});
 
-scissors_div.addEventListener('click', function () {
-    console.log("you clicked on scissors");
-});
+function getComputerChoice() {
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    console.log(Math.floor(Math.random() * 4));
+}
 
-lizard_div.addEventListener('click', function () {
-    console.log("you clicked on lizard");
-});
-spock_div.addEventListener('click', function () {
-    console.log("you clicked on spock");
-});
+getComputerChoice();
+
+function game(userChoice) {
+
+}
+
+function main() {
+
+    rock_div.addEventListener('click', function () {
+        game("rock");
+    });
+
+    paper_div.addEventListener('click', function () {
+        game("paper");
+    });
+
+    scissors_div.addEventListener('click', function () {
+        game("scissors");
+    });
+
+    lizard_div.addEventListener('click', function () {
+        game("lizard");
+    });
+    spock_div.addEventListener('click', function () {
+        game("spock");
+    });
+}
+
+main();
